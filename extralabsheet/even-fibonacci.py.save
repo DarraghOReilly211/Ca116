@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+
+import sys
+args = sys.argv[1:]
+
+fib= {
+ 1: True,
+ 2: True,
+ 3: True,
+ 5: True,
+ 8: True,
+ 13: True,
+ 21: True,
+ 34: True,
+ 55: True,
+ 89: True
+}
+
+n = 0
+for i in fib:
+   if int(i) < args and (int(i) // 2) == 0:
+      n = n + int(i)
+
+print(n)
